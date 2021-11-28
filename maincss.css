@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 100%;
+    height: 100px;
+} 
+
+.imp{
+     text-align: center;
+     background-color: white; 
+     padding-top: 50px;
+     padding-bottom: 30px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    opacity: 0.7;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 300;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
+  .responsive {
+    padding: 30px 6px;
+    float: left;
+    width: 24.99999%;
+    background-color: #f4f2fa;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  .sell {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f2fa;
+  }
+
+  .rec{
+    padding-top: 30px;
+    background-color: #e7e4f0;
+}
+
+  .img-text{
+    position: absolute;
+    color: black;
+    font-family: "montserrat", sans-serif;
+    bottom: 5%;
+    background-color: whitesmoke;
+  }
+
+  .text_line{
+    padding: 60px 60px;
+    background-color: #f4f2fa;
+    font-family: "montserrat", sans-serif;
+  }
+
+  .bottom img{
+    width: 100%;
+    height: 200px;
+
+  }
+
+  .footer{
+    background-color: black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.col p{
+  font-size: 15px;
+  color: #bbbbbb;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 130px;
+  padding-top: 30px;
+
+}
+.footer_blank{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 300px;
+  padding-bottom: 20px;
+  
+}
+.footer_blank a{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.footer_blank a:hover{
+  color:#bbbbbb;
+}
+
+.social-link{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 30px 100px;
+}
+.col .social-link a{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(255,255,255,0.2);
+    margin:0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.col .social-link a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+  .col{
+width:25%;
+padding:0 15px;
+  }
+}
+
+
+/* showroom page */
+ 
+.show{
+  background-image: url("images/show.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  padding: 50px 0 50px 0;
+}
+.show_s{
+  text-align: center;
+  font-family : 'Raleway', sans-serif;
+  padding-top: 50px;
+  color:rgb(57, 58, 58)
+
+}
+
+.thumb{
+  text-align: center;
+  font-family : 'Raleway', sans-serif;
+  color:rgb(129, 21, 21);
+  background-color: black;
+  margin: 20px 0 20px 0;
+  
+}
+
+/* About page */
+
+.a_img{
+  background-image: url("images/photo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  color: rgb(172, 49, 49);
+  font-family: 'Raleway', sans-serif;
+  padding-top: 40px;
+}
+
+table{
+   
+  width: 100%;
+  height: 100%;
+  border-width: 20px;
+  background-color:#f4f2fa; ;
+}
+
+td{
+  padding: 0px;
+  border-width: 100px;
+}
+
+.cont {
+  position: relative;
+  margin:0;
+}
+
+.image_i {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.cont:hover .image_i {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.tbl{
+  color: whitesmoke;
+   background-color: rgb(95, 10, 10); 
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   padding: 20px 0 20px 0;
+   font-size: 50px;
+}
+
+.abt_img{
+  background-image: url("images/photo.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: rgb(117, 32, 32);
+  font-family: 'Raleway', sans-serif;
+  padding: 50px 0 50px 0;
+}
+
+.con{
+  background-color: #e7e4f0;
+  color: #24262b;
+  padding-top: 50px;
+
+}
