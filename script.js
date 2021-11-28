@@ -18,4 +18,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+$(document).ready(function(){
+    $('.cont').magnificPopup({
+        type:'image',
+        delegate: 'a'
+    });
+});
             
