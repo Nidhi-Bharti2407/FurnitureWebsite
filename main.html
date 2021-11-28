@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="maincss.css">
+  <title>online furniture website</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="showroom.html">SHOWROOM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-outline-danger" data-bs-toggle="modal" 
+          data-bs-target="#loginModal">Log In</button>
+          <button class="btn btn-outline-danger" data-bs-toggle="modal" 
+          data-bs-target="#signupModal">Sign Up</button>
+           </div>
+      </div>    
+</div>
+</nav>
+
+   <!-- login Modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-secondary">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="cexampleInputPassword1" class="form-label">Conform Password</label>
+                    <input type="password" class="form-control" id="cexampleInputPassword1">
+                  </div>
+            
+                <button type="submit" class="btn btn-primary">Log In</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- signup Modal -->
+ <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-secondary">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Create Account 
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="md-3">
+                  <label for="inputEmail4" class="form-label">User Name</label>
+                  <input type="email" class="form-control" id="inputGroupPrepend">
+                </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                  <label for="cexampleInputPassword1" class="form-label">Conform Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+              <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/photo1.jfif" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Furniture World</h1>
+          <h4>Modern-Contemporary-Unique-Hign End Furniture And Accessories</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/photo4.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Unique Design</h1>
+          <h4>Home Furnishing In a Variety Styles And Materials</h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/photo2.jfif" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Infinite Possibilities</h1>
+          <h4>A Revolution In Design And Furniture</h4>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    </button>
+  </div>
+
+  <div class="imp">
+ 
+  <h2>Shop Your Favorite</h2>
+<h5>Impressive Collection For Your Dream Home</h5>
+
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/img3.jfif">
+        <img src="images/img3.jfif" alt="Cinque Terre" width="600" height="200">
+      </a>
+      <div class="desc">SOFA SETS</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/img4.jfif">
+        <img src="images/img4.jfif" alt="Forest" width="600" height="200">
+      </a>
+      <div class="desc">BEDS</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic7.jfif">
+        <img src="images/pic7.jfif" alt="Northern Lights" width="600" height="200">
+      </a>
+      <div class="desc">DINING TABLE SETS</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic1.jfif">
+        <img src="images/pic1.jfif" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc">SOFA CUM BEDS</div>
+    </div>
+  </div>
+  
+  
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic3.jfif">
+        <img src="images/pic3.jfif" alt="Cinque Terre" width="600" height="200">
+      </a>
+      <div class="desc">SHOE RACKS</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic6.jfif">
+        <img src="images/pic6.jfif" alt="Forest" width="600" height="200">
+      </a>
+      <div class="desc">STUDY TABLES</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic.jpg">
+        <img src="images/pic.jpg" alt="Northern Lights" width="600" height="200">
+      </a>
+      <div class="desc">BOOK SHELVES</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic4.jfif">
+        <img src="images/pic4.jfif" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc">COFFEE TABLES</div>
+    </div>
+  </div>
+
+ 
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/img2.jfif">
+        <img src="images/img2.jfif" alt="Cinque Terre" width="600" height="200">
+      </a>
+      <div class="desc">TV UNITS</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic5.jfif">
+        <img src="images/pic5.jfif" alt="Forest" width="600" height="200">
+      </a>
+      <div class="desc">HOME DECOR</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/pic2.jfif">
+        <img src="images/pic2.jfif" alt="Northern Lights" width="600" height="200">
+      </a>
+      <div class="desc">LAMPS AND LIGHTING</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/img6.jfif">
+        <img src="images/img6.jfif" alt="Mountains" width="600" height="200">
+      </a>
+      <div class="desc">KITCHEN</div>
+    </div>
+  </div>
+
+
+
+<div class="sell">
+
+  <h2>Best Sellers Of The Season</h2>
+
+  </div>
+
+  <div class="rec">
+    <h3>RECOMMENDED</h3>
+    <div class="owl-carousel owl-theme" class="img">
+        <div class="item">
+           <img src="images/dining.jpg">
+            <div class="img-text">
+              <h4>DINING</h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/living.jpg">
+            <div class="img-text">
+              <h4>LIVING</h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/bedroom.jpg">
+            <div class="img-text">
+              <h4>BEDROOM</h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/kitchen.jpg">
+            <div class="img-text">
+              <h4>KITCHEN</h4>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text_line">
+  <h4>Buy Furniture Online at WoodenStreet- India’s Finest One-Stop Destination for All Your Needs</h4>
+  <p>Getting the wooden furniture online in India, which perfectly blends with your home decor is now easy. Wooden Street provides you with ready-made and customized solid wood furniture online. At WoodenStreet, we are committed to serve our customers the exclusive range in home furniture products like sofa set, coffee tables, wardrobes, dining tables, all crafted from premium-quality solid-wood. Along with this, you can explore our home decor range which includes wall art, photo frames, indoor plants, tableware, glassware, kitchen organizer and many more are just few clicks away from you. We offer you a huge variety of online furniture to choose from. You can browse among various designs, dimensions, colors and finish options, all at your convenience. From modern to traditional styles, contemporary to loft ones, space-saving furniture pieces to huge ones, we provide every type of modern furniture online to match your home needs. Take a pick from the exquisite collection of home furniture or get it customized as per your requirements, all possible at WoodenStreet.</p>
+  
+  <h4>Shop Complete Range of Home Furniture in India</h4>
+  <p>Wooden Street is a treasure trove, the more you explore, the more you get. Whether you are looking for the living room bedroom, dining, study room furniture online, you will get it all at Wooden Street. We have the latest furniture designs and that are perfectly fit for modern households. Additionally, you can get your home furniture online customized here. Not only this, you can even get your home interior design remodeled with us. Our dedicated team of interior designers will spare no effort in giving a brand-new look to your house. The categories of solid wood furniture include a dining table, dining table set, futon beds, center tables, TV Stands, wardrobe, bookshelves, sofa cum bed, bar cabinets and much more. And these ranges include enough of sub-categories for you to compare and choose the one that best suits your requirement. Not only this, you can also browse the new segment of homeware items.</p>
+  
+  <h4>Explore WoodenStreet’s Experience Stores for Rich Collection</h4>
+  <p>Surely, there is the next level of comfort and time savior option for shopping for furniture and furnishings while sitting in your own comfort zone. But, undeniably, entering the furniture store, where you can touch and feel the quality and comfort, is surprisingly kicking it up a notch of the overall shopping experience. So, whether your choice is an old-school or modern way of shopping for furniture in just a few clicks, WoodenStreet stands best in both of the worlds. We have 35+ Experience stores spread across PAN India where customers can experience the innovative designs and overall quality of furniture that we serve.
+ <br>
+ In 2016, we opened our first experience store in Bengaluru and this number continues to grow. Along with this, our stores are well-equipped with the latest technologies such as Virtual Reality (VR), etc where customers can easily take the virtual tours of our latest collection with minimum assistance. Whether you are looking for a new chair, ottoman, sofa or kitchen cabinet, we make your buying easier in every case.
+ <br>
+ Just enter the roof of a fascinating collection that positively steals your heart. Here, you will not find the salesperson but the interior professionals that will guide you to find the best product for you, which blends in with your preferences and style. Not only this, each piece you will discover is crafted of premium and sustainable material for promising long-lasting durability. So, whom are you waiting for now? Look no further and rush for the nearest furniture store of WoodenStreet.</p>
+
+ <h4>How to Shop for Furniture Online in a Smart Way?</h4>
+ <p>Decorating and furnishing the home is an experimental fun way to give your space the personal flair that is required. But it can cost a lot of money if not properly planned. When your ceaseless googling is over at WoodenStreet, it doesn’t mean that you landed with the furniture which is right for you. It’s obvious to get confused by the overwhelming and attractive options that go well in your latest needs without breaking a bank.<br>By paying attention to every functionality of the furniture, the space availability factor, mixing well with the existing decor accessories, colors and tone of the room is the next vital aspect to look after. For instance, if you need a chair, then what is the purpose? Like, a recliner chair for relaxing or an ergonomic office chair for working long hours. Another example is either you want a modern sofa cum bed for accommodating more guests over a night or a luxurious corner sofa where space is at a premium. Encapsulating all, when you want to purchase a piece of wooden furniture online, the thumb rule is to select highly functional products which serve multiple purposes.<br>After finalizing this, select the products, which say about the true sense of your personality and aesthetics. Moreover, decide the preliminary budget that you want to invest in for decorating or refurnishing your homes. By understanding all these parameters, WoodenStreet is the best furniture online store in India to grab an incredible shopping experience.</p>
+ 
+ <h4>Buy Wooden Furniture Online to get Incalculable Benefits</h4>
+  <p>A home is incomplete without the fundamental furniture units. No matter how big or small is your apartment, space is not defined until you assemble furniture in it.</p>
+<br>
+<p>Wooden Street is here to give you the best experience of online shopping and provide you with the premium quality furniture, which will adorn your abode perfectly.</p> 
+
+<ol type="1">
+  <li><strong>A Wide Array of Furniture for your home:</strong> At Wooden Street, you will come across an excellent range of wooden furniture. If you are pondering to get yourself a peculiar interior, then this is the right place for you!! We also have an amazing range of uniquely designed modular furniture for your bedroom, living room, dining room and more. Suit yourself and get the one that meets your requirements and style. In fact, our furniture store also blends modern and traditional style pieces and creates an exquisite and gorgeous "custom-made-order" pieces of furniture for you.</li>
+  <br>
+  <li><strong>A Wooden Furniture Heaven:</strong> Got trust issues related to the quality of wood? We’ve got you covered, we deal with only wooden furniture and won't disappoint you with the quality. As every product is made of solid wood like Sheesham and mango which are highly durable and sturdy and will survive the test of the time.</li>
+ <br>
+  <li><strong>Customization Facility:</strong>  Put your imagination on a piece of paper, and we will make sure to get you the exact same furniture. Start by selecting the material for the foundation, then choose the material of fabric and pattern and color. We have got everything online for furniture, mango and sheesham wood furniture, space saving furniture and polishes (dark, light, natural, mahogany, walnut, honey, etc.), all the colors, fabric (leatherette, velvet, cotton). So, gaga over and book an item of furniture through our site.</li>
+</ol>
+
+<h4>Buy Amazing Furniture Online at Affordable Prices On WoodenStreet</h4>
+<p>Buying an item of furniture online with a package of high quality and matches the budget is a difficult task. A lot of people think it's a huge investment and settle up with what they have. WoodenStreet understands this and ensures no one will disappoint at India’s prime furniture online store. Browse to any category, either the living room, dining room, bedroom, study room, outdoor furniture, and even home furnishings, and we offer premium quality home furniture at reasonable prices you can afford. Trust us with your furniture styles and preferences and buy beautiful furniture online at WoodenStreet without worrying about the prices.</p>
+</div>
+
+<div class="bottom">
+  <img src="images/logo1.jpg">
+</div>
+
+<footer class="footer">
+  
+      <div class="row">
+        <div class="col">
+          <p>Furniture World © 2021 All Rights Reserved</p>
+          <div class="footer_blank"><a href="#" target="_blank">Created by Nidhi Bharti</a></div>
+        </div>
+          
+
+          <div class="col">
+              <div class="social-link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+
+      </div>
+  
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
